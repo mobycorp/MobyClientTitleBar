@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MobyModules>
+	<MobyModule
+		FontFamily="FaDuotone"
+		FontIconName="ChartLine"
+		FontSize="24"
+		IsShown="true"
+		ModuleMenuLocation="Top"
+		ModuleName="Dashboard"
+		ModuleDescription="Dashboard" />
+	<MobyModule
+		FontFamily="FaDuotone"
+		FontIconName="Inboxes"
+		FontSize="24"
+		IsShown="true"
+		ModuleMenuLocation="Top"
+		ModuleName="MailFolders"
+		ModuleDescription="Mail Folders" />
+	<MobyModule
+		FontFamily="FaDuotone"
+		FontIconName="Messages"
+		FontSize="24"
+		IsShown="true"
+		ModuleMenuLocation="Top"
+		ModuleName="Messages"
+		ModuleDescription="Messages" />
+	<MobyModule
+		FontFamily="FaDuotone"
+		FontIconName="Files"
+		FontSize="24"
+		IsShown="true"
+		ModuleMenuLocation="Top"
+		ModuleName="SharedContent"
+		ModuleDescription="Shared Content" />
+	<MobyModule
+		FontFamily="FaDuotone"
+		FontIconName="Calendar"
+		FontSize="24"
+		IsShown="true"
+		ModuleMenuLocation="Top"
+		ModuleName="Calendar"
+		ModuleDescription="Calendar" />
+	<MobyModule
+		FontFamily="FaDuotone"
+		FontIconName="AddressBook"
+		FontSize="24"
+		IsShown="true"
+		ModuleMenuLocation="Top"
+		ModuleName="Contacts"
+		ModuleDescription="Contacts" />
+	<MobyModule
+		FontFamily="FaDuotone"
+		FontIconName="Gear"
+		FontSize="24"
+		IsShown="false"
+		ModuleMenuLocation="Bottom"
+		ModuleName="Settings"
+		ModuleDescription="Settings" />
+</MobyModules>

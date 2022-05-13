@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MobyModules" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="MobyModules" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MobyModule">
+          <xs:complexType>
+            <xs:attribute name="FontFamily" type="xs:string" />
+            <xs:attribute name="FontIconName" type="xs:string" />
+            <xs:attribute name="FontSize" type="xs:string" />
+            <xs:attribute name="IsShown" type="xs:string" />
+            <xs:attribute name="ModuleMenuLocation" type="xs:string" />
+            <xs:attribute name="ModuleName" type="xs:string" />
+            <xs:attribute name="ModuleDescription" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

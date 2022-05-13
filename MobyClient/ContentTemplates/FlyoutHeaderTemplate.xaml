@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Grid
+    x:Class="MobyClient.ContentTemplates.FlyoutHeaderTemplate"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="{StaticResource Primary}"
+    ColumnDefinitions="Auto,Auto,Auto"
+    HeightRequest="48"
+    HorizontalOptions="StartAndExpand"
+    WidthRequest="300">
+    <Image
+        Grid.Column="0"
+        Margin="10,0,5,9"
+        HeightRequest="36"
+        HorizontalOptions="Start"
+        SemanticProperties.Description="Moby application logo"
+        Source="moby_logo_plain.png"
+        WidthRequest="48" />
+    <Label
+        Grid.Column="1"
+        FontFamily="SegoeUiSemibold"
+        FontSize="28"
+        HorizontalOptions="StartAndExpand"
+        Text="Moby"
+        TextColor="White" />
+    <Switch
+        Grid.Column="2"
+        HorizontalOptions="End"
+        IsToggled="{Binding FlyoutOpen}"
+        Margin="90,1,0,0"
+        Toggled="Switch_Toggled"
+        VerticalOptions="Start" />
+</Grid>

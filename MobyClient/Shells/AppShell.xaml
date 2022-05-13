@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MobyClient.Shells.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:MobyClient.Pages"
+    xmlns:viewModels="clr-namespace:MobyClient.ViewModels"
+    x:DataType="viewModels:ShellViewModel"
+    Shell.FlyoutWidth="300">
+    <ShellContent
+        Title="{Binding Dashboard.Title}"
+        ContentTemplate="{DataTemplate pages:PageDashboard}"
+        Icon="{StaticResource Dashboard}"
+        Route="PageDashboard" />
+    <ShellContent
+        Title="{Binding Emails.Title}"
+        ContentTemplate="{DataTemplate pages:PageEmails}"
+        Icon="{StaticResource Emails}"
+        Route="PageEmails" />
+    <ShellContent
+        Title="{Binding Messages.Title}"
+        ContentTemplate="{DataTemplate pages:PageMessages}"
+        Icon="{StaticResource Messages}"
+        Route="PageMessages" />
+    <ShellContent
+        Title="{Binding SharedContent.Title}"
+        ContentTemplate="{DataTemplate pages:PageSharedContent}"
+        Icon="{StaticResource SharedContent}"
+        Route="PageSharedContent" />
+    <ShellContent
+        Title="{Binding Calendar.Title}"
+        ContentTemplate="{DataTemplate pages:PageCalendar}"
+        Icon="{StaticResource Calendar}"
+        Route="PageCalendar" />
+    <ShellContent
+        Title="{Binding Contacts.Title}"
+        ContentTemplate="{DataTemplate pages:PageContacts}"
+        Icon="{StaticResource Contacts}"
+        Route="PageContacts" />
+</Shell>

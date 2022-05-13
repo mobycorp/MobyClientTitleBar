@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MobyClient.Pages.PageLogin"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:strings="clr-namespace:MobyClient.Resources.Strings"
+    xmlns:viewModels="clr-namespace:MobyClient.ViewModels"
+    Title="PageLogin"
+    x:DataType="viewModels:LoginViewModel">
+    <Frame
+        Padding="15"
+        BorderColor="Gray"
+        HorizontalOptions="CenterAndExpand"
+        VerticalOptions="CenterAndExpand">
+        <StackLayout>
+            <Frame
+                Padding="10"
+                BackgroundColor="{StaticResource Primary}"
+                CornerRadius="8"
+                HorizontalOptions="StartAndExpand"
+                WidthRequest="350">
+                <StackLayout Orientation="Horizontal">
+                    <Image
+                        Margin="10,0,0,0"
+                        HeightRequest="36"
+                        SemanticProperties.Description="Moby application logo"
+                        Source="moby_logo.png"
+                        WidthRequest="48" />
+                    <Label
+                        Margin="10,0,0,0"
+                        FontFamily="SegoeUiSemibold"
+                        FontSize="28"
+                        Text="{x:Static strings:AppResources.LabelMobyLogin}"
+                        TextColor="White"
+                        VerticalOptions="Center" />
+                </StackLayout>
+            </Frame>
+            <Label
+                Margin="0,10,0,2"
+                Text="{x:Static strings:AppResources.LabelUsername}" />
+            <Entry
+                Margin="0,2"
+                Text="{Binding Username}"
+                WidthRequest="350" />
+            <Label
+                Margin="0,2"
+                Text="{x:Static strings:AppResources.LabelPassword}" />
+            <Entry
+                Margin="0,2,0,10"
+                Text="{Binding Password}"
+                WidthRequest="350" />
+            <Button
+                Margin="0,10,0,0"
+                Command="{Binding LoginCommand}"
+                HorizontalOptions="StartAndExpand"
+                Text="{x:Static strings:AppResources.LabelLogin}"
+                WidthRequest="350" />
+        </StackLayout>
+    </Frame>
+</ContentPage>
